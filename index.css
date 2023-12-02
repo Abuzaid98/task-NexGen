@@ -81,7 +81,7 @@ body {
 }
 
 .slide .text .text-content h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 1.5rem;
 }
 
@@ -194,7 +194,7 @@ body {
 }
 
 .wrap-3 .video {
-position: relative;
+    position: relative;
     margin-top: -16rem;
 }
 
@@ -203,13 +203,15 @@ position: relative;
     border: 7px solid #fff;
     object-fit: cover;
 }
-.play{
+
+.play {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.play .fa-solid{
+
+.play .fa-solid {
     font-size: 5rem;
     color: #ffffff87;
 }
@@ -219,14 +221,22 @@ position: relative;
 }
 
 @media screen and (max-width:769px) {
+    html {
+        font-size: 14px;
+    }
+
     .slide {
         flex-direction: column;
+    }
+
+    .slide .image img {
+        height: 400px;
     }
 
     .wrap-1 .controls .prev,
     .wrap-1 .controls .next {
 
-        top: 35%;
+        top: 40%;
         left: 32%;
     }
 
@@ -240,6 +250,17 @@ position: relative;
         font-size: 10px;
     }
 
+    .slide .text .text-content h2 {
+        font-size: 1.6rem;
+    }
+    .slide .text .text-content p{
+        font-size: 1.4rem;
+    }
+
+    .slide .text .text-content {
+        padding: 2rem;
+    }
+
     .slide {
         flex-direction: column;
     }
@@ -251,7 +272,7 @@ position: relative;
     .wrap-1 .controls .prev,
     .wrap-1 .controls .next {
 
-        top: 41.5%;
+        top: 39.5%;
         left: 39%;
     }
 
